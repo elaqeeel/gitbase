@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body style="background: grey">
+    <div style="background: black">
+      `
+      <h1 style="color: white">Web Dev Registration Form</h1>
+    </div>
+    <form
+      onsubmit="myFunction()"
+      action="mailto: pharuqhumar99@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <fieldset>
+        <legend>User Information</legend>
+        <label>First Name</label><br />
+        <input type="text" name="fname" placeholder="firstname" /> <br /><br />
+        <label>Last Name</label><br />
+        <input type="text" name="name" /> <br /><br />
+        <label>Password</label><br />
+        <input type="password" name="[assword" /> <br /><br />
+        <label>Gender</label><br />
+        <input type="radio" name="gender" value="male" />
+        Male
+        <input type="radio" name="gender" value="female" />
+        Female
+        <br /><br />
+        <label>Location</label><br />
+        <select name="location">
+          <option value="lagos">Lagos</option>
+          <option value="ibadan">Ibadan</option>
+          <option value="abeokuta">Abeokuta</option>
+        </select>
+        <br /><br />
+        <label>Interests</label><br />
+        <input type="checkbox" name="Interests" value="Movies" /> Movies
+        <input type="checkbox" name="Interests" value="Music" /> Music
+        <input type="checkbox" name="Interests" value="Art" /> Art
+        <input type="checkbox" name="Interests" value="Sports" /> Sports
+        <br /><br />
+      </fieldset>
+      <br /><br />
+      <label style="color: blue">For the Front End Web Devs only</label><br />
+      <input type="radio" name="Front End" value="HTML" /> HTML <br />
+      <input type="radio" name="Front End" value="CSS" /> CSS <br />
+      <input type="radio" name="Front End" value="JavaScript" /> JavaScript
+      <br /><br />
+
+      <label style="color: blue">For the Back End Web Devs only</label><br />
+      <input type="radio" name="Back End" value="PHP" /> PHP <br />
+      <input type="radio" name="Back End" value="SQL" /> SQL <br />
+      <input type="radio" name="Back End" value="Python" /> Python <br /><br />
+
+      <label>For the Full Stack Web Devs only</label><br />
+      <input type="radio" name="Full stack" value="MySQL" /> MySQL <br />
+      <input type="radio" name="Full Stack" value="Ruby" /> Ruby <br />
+      <input type="radio" name="Full Stack" value="DBMS" /> DBMS <br /><br />
+
+      <input type="checkbox" />
+      <label>Accept Terms & Condition</label><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      function myFunction() {
+        alert;
+        ("the form is submitted succesfully");
+      }
+    </script>
+  </body>
+</html>
